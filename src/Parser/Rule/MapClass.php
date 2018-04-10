@@ -37,7 +37,7 @@ class MapClass implements IRule
                     $attrParts = explode('$', $attr, 2);
                     if (isset($attrParts[1]))
                     {
-                        $values[$key][$attrParts[1]] = isset($uses[$attrParts[0]]) ? $uses[$attrParts[0]] : $attrParts[0];
+                        $values[$key][$attrParts[1]] = trim(isset($uses[$attrParts[0]]) ? $uses[$attrParts[0]] : $attrParts[0]);
                         unset($values[$key][$index]);
                     }
                     else
