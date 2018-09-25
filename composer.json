@@ -16,5 +16,6 @@
   ],
   "require": {
     "valous/core": "dev-master"
-  }
+  },
+  "minimum-stability": "dev"
 }
